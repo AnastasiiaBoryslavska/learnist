@@ -65,7 +65,7 @@ public class UserControllerTest {
                 .andExpect(MockMvcResultMatchers.view().name("redirect:/user/list"))
                 .andExpect(MockMvcResultMatchers.redirectedUrl("/user/list"));
     }
-
+//test
     @Test
     public void shouldGetUserList() throws Exception {
         when(this.userService.getAllUsers()).thenReturn(new ArrayList<User>());
